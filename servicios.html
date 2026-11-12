@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Servicios | Ivana Pech Lee</title>
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="apple-touch-icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Unbounded:wght@600;800&family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=block" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="servicios">
+<div id="loader"><div class="loader-inner">
+  <div class="comic-title">CARGANDO<span>.</span><span>.</span><span>.</span></div>
+  <div class="uline-wrap"><svg class="uline" viewBox="0 0 220 36"><path d="M5,18 Q40,4 75,20 T150,16 T215,22"/></svg>
+  <div class="loader-pencil"><svg viewBox="0 0 24 24"><path d="M2 22l1.5-6L18 1.5l4.5 4.5L8 20.5 2 22z"/></svg></div></div></div></div>
+<main>
+<section id="servicios">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="num">04</span><h2>Servicios</h2></div>
+    <p class="reveal" style="color:var(--mut);font-size:13px;margin-bottom:26px;">Haz clic en un servicio para ver sus precios.</p>
+    <div class="serv-grid" id="servGrid"></div>
+  </div>
+</section>
+<section id="terminos">
+  <div class="wrap">
+    <div class="section-head"><span class="num">04.1</span><h2>Términos y condiciones</h2></div>
+    <p class="pf-intro">Antes de pedir tu cotización, ten en cuenta lo siguiente. Cada proyecto se cotiza de forma personalizada: escríbeme con los detalles y lo platicamos.</p>
+    <h3 class="terms-sub">Condiciones generales</h3>
+    <ul class="terms-list info">
+      <li><span class="x">$</span><b>Pago para iniciar</b><p>Para iniciar el proyecto es necesario pagar el 50 % o el 100 % del total.</p></li>
+      <li><span class="x">⊘</span><b>Sin reembolsos</b><p>Una vez iniciado el proyecto, ya no se pueden hacer reembolsos.</p></li>
+      <li><span class="x">◷</span><b>Tiempo de entrega</b><p>De 1 a 3 semanas. El tiempo exacto se acuerda cuando te entregue la cotización.</p></li>
+    </ul>
+    <h3 class="terms-sub" style="margin-top:42px;">Lo que no realizo</h3>
+    <ul class="terms-list">
+      <li><span class="x">✕</span><b>Contenido NSFW</b><p>Ilustraciones, animaciones o ediciones de carácter sexual explícito o solo para adultos.</p></li>
+      <li><span class="x">✕</span><b>Mecha</b><p>Diseño o ilustración de mechas y robots gigantes.</p></li>
+      <li><span class="x">✕</span><b>Exceso de gore</b><p>Violencia gráfica, sangre o desmembramientos llevados al extremo.</p></li>
+    </ul>
+    <!-- Aquí puedes agregar más condiciones (número de revisiones, derechos de uso, etc.) -->
+    <label class="terms-accept"><input type="checkbox" id="acceptTerms"> He leído y acepto los términos y condiciones</label>
+    <button type="button" class="btn" id="quoteBtn" disabled>Pedir cotización →</button>
+    <p class="terms-hint" id="quoteHint">Marca la casilla para poder pedir tu cotización.</p>
+
+    <div class="quote-modal" id="quote-modal" hidden>
+      <div class="quote-box" role="dialog" aria-modal="true" aria-labelledby="qTitle">
+        <button type="button" class="quote-close" id="qClose" aria-label="Cerrar">✕</button>
+        <h3 id="qTitle">Pedir cotización</h3>
+        <p>Cuéntame sobre tu proyecto y te respondo con la cotización.</p>
+        <form id="quoteForm">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo" required>
+          <select name="servicio" required><option value="">¿Qué servicio necesitas?</option><option>Ilustración Personalizada</option><option>Diseño de Personajes</option><option>Animación 2D</option><option>Animación 3D</option><option>Animatic</option><option>Storyboard</option><option>Motion Graphics</option><option>Edición de Video</option><option>Fotografía para Eventos</option><option>Flyer</option><option>Contenido para Redes Sociales</option><option>Otro</option></select>
+          <textarea name="mensaje" placeholder="Describe tu proyecto..." required></textarea>
+          <input type="hidden" name="terminos_aceptados" value="Sí">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <button type="submit" class="btn" style="align-self:flex-start;">Enviar solicitud</button>
+          <p class="form-status" id="quoteStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

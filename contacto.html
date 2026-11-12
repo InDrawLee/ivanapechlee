@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contacto | Ivana Pech Lee</title>
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="apple-touch-icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Unbounded:wght@600;800&family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=block" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="contacto">
+<div id="loader"><div class="loader-inner">
+  <div class="comic-title">CARGANDO<span>.</span><span>.</span><span>.</span></div>
+  <div class="uline-wrap"><svg class="uline" viewBox="0 0 220 36"><path d="M5,18 Q40,4 75,20 T150,16 T215,22"/></svg>
+  <div class="loader-pencil"><svg viewBox="0 0 24 24"><path d="M2 22l1.5-6L18 1.5l4.5 4.5L8 20.5 2 22z"/></svg></div></div></div></div>
+<main>
+<section id="contacto">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="num">05</span><h2>Contacto</h2></div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="mail-line"><span class="ic">✉</span><span><small>Correo</small>ipechlee@gmail.com</span></p>
+        <!-- PEGA el link de cada red en su href (empieza con https://) -->
+        <a class="social" href="https://www.instagram.com/indraw_lee?igshid=MXMzaXFpc3J6aDJvbg%3D%3D" target="_blank" rel="noopener"><span class="ic">◎</span> Instagram</a>
+        <a class="social" href="https://www.facebook.com/profile.php?id=100089300569818" target="_blank" rel="noopener"><span class="ic">▣</span> Facebook</a>
+        <a class="social" href="https://www.tiktok.com/@indraw_lee" target="_blank" rel="noopener"><span class="ic">✕</span> TikTok</a>
+        <a class="social" href="https://www.youtube.com/channel/UCXNPQcqk59bA9_2bn9dpyKw" target="_blank" rel="noopener"><span class="ic">▶</span> YouTube</a>
+        <p style="margin-top:22px;font-size:14px;color:var(--mut);line-height:1.7;">¿Tienes un proyecto de ilustración, animación o contenido visual en mente? Escríbeme y platiquemos los detalles y una cotización.</p>
+      </div>
+      <form class="reveal" id="contactForm">
+          <input type="hidden" name="access_key" value="425af05b-c20d-4a8a-b9a7-7079e10680eb">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn" style="align-self:flex-start;margin-top:8px;">Enviar solicitud</button>
+        <small class="terms-note">Al enviar este formulario aceptas los <a href="servicios.html#terminos">términos y condiciones</a>.</small>
+        <p class="form-status" id="contactStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
